@@ -4,7 +4,7 @@ export async function getPokemon({
     page=1,
     limit
 }: {
-    query: string;
+    query?: string;
     page?: number;
     limit?: number;
 }) {
@@ -27,6 +27,17 @@ export async function getPokemon({
     }
 }
 
-function pokemonNameStartsWithQuery(name: string, query: string) {
-    return name.toLowerCase().startsWith(query);
-}
+    function pokemonNameStartsWithQuery(name: string, query: string) {
+        return name.toLowerCase().startsWith(query);
+    }
+    export async function fetchPokemon({page=1, search}:{page?: number, search?: string | undefined}) {
+        try
+        {
+            const pokemonData = getPokemon({query: search, page })
+
+            return pokemonData
+        }
+         catch (error) {
+            console.log(error);
+        }
+    }
