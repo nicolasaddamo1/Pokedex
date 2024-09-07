@@ -4,10 +4,8 @@ const nextConfig = {
         domains: ['raw.githubusercontent.com'],
         unoptimized:true,
     },
-    //output:'export'
-    experimental:{
-        appDir:true,
-    }
+    output:'export'
+
 };
 
 export default nextConfig;

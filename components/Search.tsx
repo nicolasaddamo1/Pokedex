@@ -2,7 +2,10 @@
 import { useRouter } from "next/navigation"
 import { useDebounce } from "use-debounce"
 import { useState, useRef, useEffect } from "react"
-const Search = ({search}: {search?: string}) => {
+interface SearchProps {
+    search?: string;
+  }
+const Search: React.FC<SearchProps> = ({search}: {search?: string}) => {
     const router = useRouter()
     const initialRender = useRef(true)
     const [text, setText] = useState(search)

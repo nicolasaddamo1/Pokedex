@@ -4,12 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "deploy": "gh-pages -d out",
     "start": "next start",
     "lint": "next lint"
   },
-  "homepage": "https://nicolasaddamo1.github.io/Pokedex",
   "dependencies": {
     "framer-motion": "^11.5.4",
     "next": "14.2.8",
