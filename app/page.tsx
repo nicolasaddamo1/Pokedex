@@ -3,8 +3,6 @@ import { fetchPokemon } from './actions/getPokemon';
 import LoadPokemon from '@/components/LoadPokemon';
 import Search from '@/components/Search';
 
-export const dynamic = 'force-dynamic';
-
 const Page = async({searchParams}:{
   searchParams:{
     [key:string]:string | string[] | undefined
