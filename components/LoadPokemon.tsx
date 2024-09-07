@@ -33,7 +33,7 @@ const LoadPokemon = ({search, initialPokemon}: {search: string | undefined, init
         <>
         <div className="grid sm:grid-cols2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
             {pokemon?.map((poke: Pokemon)=>(
-                <PokemonCard/>
+                <PokemonCard key={poke.url} pokemon={poke}/>
             ))}
         </div>
             {

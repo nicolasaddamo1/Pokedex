@@ -2,7 +2,7 @@
 export async function getPokemon({
     query,
     page=1,
-    limit
+    limit=1025
 }: {
     query?: string;
     page?: number;

@@ -1,13 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        remotePatterns: [
-            {
-                protocol:"https",
-                hostname:"raw.githubsercontent.com"
-            }
-        ]
-    }
+        domains: ['raw.githubusercontent.com'], // Asegúrate de que el dominio esté correctamente escrito
+    },
 };
 
 export default nextConfig;
