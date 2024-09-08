@@ -2,7 +2,10 @@ import React from 'react'
 import { fetchPokemon } from './actions/getPokemon';
 import LoadPokemon from '@/components/LoadPokemon';
 import Search from '@/components/Search';
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of b97f1d4 (ready to deploy)
 const Page = async({searchParams}:{
   searchParams:{
     [key:string]:string | string[] | undefined

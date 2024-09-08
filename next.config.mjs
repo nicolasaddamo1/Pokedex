@@ -1,11 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['raw.githubusercontent.com'],
-        unoptimized:true,
+        domains: ['raw.githubusercontent.com'], // Asegúrate de que el dominio esté correctamente escrito
     },
-    output:'export'
-
 };
 
 export default nextConfig;
